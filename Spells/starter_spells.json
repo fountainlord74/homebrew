@@ -21,11 +21,11 @@
 	},
 	"spell": [
 		{
-			"name": "Beast Totem",
-			"source": "Ranger+",
-			"page": 9,
-			"level": 1,
-			"school": "T",
+			"name": "Shocking Bolts",
+			"source": "Starter Spells",
+			"page": 1,
+			"level": 0,
+			"school": "V",
 			"time": [
 				{
 					"number": 1,
@@ -36,82 +36,75 @@
 				"type": "point",
 				"distance": {
 					"type": "feet",
-					"amount": 30
+					"amount": 60
 				}
 			},
 			"components": {
 				"v": true,
 				"s": true,
-				"m": {
-					"text": "a figurine in the shape of the beast the spell targets worth at least 25gp",
-					"cost": 2500
-				}
 			},
 			"duration": [
 				{
 					"type": "instant"
 				}
 			],
-			"meta": {
-				"ritual": true
-			},
 			"entries": [
-				"You hold out the figurine and target a willing beast of CR 1/2 or lower within range, binding the beast to the figurine. While the beast is bound and you possess the figurine, you can use your bonus action to dismiss the beast into the figurine (so long as you are on the same plane of existence), or to call it forth to an unoccupied space within 10 feet of you. You can't make a bond with a beast that is {@condition charmed} or {@condition incapacitated}.",
-				"While inside the figurine time passes normally for the beast, however it does not age, require food or water, and it is immune to any damage, conditions, or harmful effects. The beast cannot be dismissed while it is {@condition paralyzed}, {@condition restrained}, {@condition frightened}, or {@condition charmed}.",
-				"Should the beast ever be slain, you can use this figurine in place of the creature's body for the purpose of resurrection. The beast's bond to the figurine ends if either you or the beast spend 10 minutes focusing on your bond to do so, or if the figurine is broken. The beast can choose to break the bond even while inside of the figurine. If the bond is ended while the beast is inside of figurine, the beast immediately appears in the nearest unoccupied space to the figurine.",
-				"You can have a number of beast totems equal to your spellcasting ability modifier (minimum of 1). If you cast this spell on a beast while you have your maximum amount of bound figurines, you must choose to end one of the bonds or the spell fails."
-			],
-			"miscTags": [
-				"PRM"
+				"Tendrils of purple-white lightning burst from your hand to envelop a creature within range. The target must succeed on a DEX save or take 1d10 lightning damage. If the target is wearing metal armor or is made of metal, it has disadvantage on this save.",
+                "This spell’s damage increases by 1d10 when you reach 5th level (2d10), 11th level (3d10), and 17th level (4d10)."
 			],
 			"classes": {
 				"fromClassList": [
 					{
-						"name": "Ranger",
+						"name": "Sorcerer",
 						"source": "PHB"
 					}
+                    {
+                        "name": "Wizard",
+                        "source": "PHB"
+                    }
 				]
 			}
 		},
 		{
-			"name": "Zephyr Strike",
-			"source": "Ranger+",
-			"page": 10,
-			"level": 1,
-			"school": "T",
+			"name": "Bane Blade",
+			"source": "Starter Spells",
+			"page": 1,
+			"level": 0,
+			"school": "E",
 			"time": [
 				{
 					"number": 1,
-					"unit": "bonus"
+					"unit": "action"
 				}
 			],
 			"range": {
 				"type": "point",
 				"distance": {
-					"type": "self"
+					"type": "feet",
+                    "amount": 5
 				}
 			},
 			"components": {
 				"v": true,
-				"m": "a weapon or piece of ammunition"
+				"m": "a melee weapon"
 			},
 			"duration": [
 				{
 					"type": "timed",
 					"duration": {
-						"type": "minute",
+						"type": "round",
 						"amount": 1
 					}
 				}
 			],
 			"entries": [
-				"A howling gale whips around your body, and you feel yourself become as light as wind. For the duration, your movement doesn't provoke opportunity attacks.",
-				"Additionally, you can choose to end this spell before you make an attack to grant that attack advantage. On a hit, this attack deals an additional {@damage 1d8} damage."
+				"As part of the action used to cast this spell, you must make a melee attack with a weapon against one creature within the spell's range, otherwise the spell fails. On a hit, the target suffers the attack's normal effects, and you channel negative energy through your strike to weaken the target. The first time the target makes an attack roll, ability check, or saving throw before the start of your next turn, it must roll a d4 and subtract the value from its roll.",
+                "This spell's damage increases when you reach higher levels. At 5th level, the melee attack deals an extra 1d8 necrotic damage to the target. This damage increases by 1d8 at 11th level and 17th level."
 			],
 			"classes": {
 				"fromClassList": [
 					{
-						"name": "Ranger",
+						"name": "Cleric",
 						"source": "PHB"
 					}
 				]
