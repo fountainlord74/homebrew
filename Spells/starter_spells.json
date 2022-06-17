@@ -41,7 +41,7 @@
 			},
 			"components": {
 				"v": true,
-				"s": true,
+				"s": true
 			},
 			"duration": [
 				{
@@ -57,7 +57,7 @@
 					{
 						"name": "Sorcerer",
 						"source": "PHB"
-					}
+					},
                     {
                         "name": "Wizard",
                         "source": "PHB"
