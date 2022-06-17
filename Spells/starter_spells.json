@@ -1,0 +1,121 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "Starter Spells",
+				"abbreviation": "s^2",
+				"full": "Starter Spells",
+				"url": "https://www.google.com",
+				"authors": [
+					"KnightOfTheFountain"
+				],
+				"convertedBy": [
+					"fountainlord74"
+				],
+				"version": "0.1"
+			}
+		],
+		"dateAdded": 1642116367,
+		"dateLastModified": 1642116367,
+		"_dateLastModifiedHash": "3edca52217"
+	},
+	"spell": [
+		{
+			"name": "Beast Totem",
+			"source": "Ranger+",
+			"page": 9,
+			"level": 1,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": {
+					"text": "a figurine in the shape of the beast the spell targets worth at least 25gp",
+					"cost": 2500
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"meta": {
+				"ritual": true
+			},
+			"entries": [
+				"You hold out the figurine and target a willing beast of CR 1/2 or lower within range, binding the beast to the figurine. While the beast is bound and you possess the figurine, you can use your bonus action to dismiss the beast into the figurine (so long as you are on the same plane of existence), or to call it forth to an unoccupied space within 10 feet of you. You can't make a bond with a beast that is {@condition charmed} or {@condition incapacitated}.",
+				"While inside the figurine time passes normally for the beast, however it does not age, require food or water, and it is immune to any damage, conditions, or harmful effects. The beast cannot be dismissed while it is {@condition paralyzed}, {@condition restrained}, {@condition frightened}, or {@condition charmed}.",
+				"Should the beast ever be slain, you can use this figurine in place of the creature's body for the purpose of resurrection. The beast's bond to the figurine ends if either you or the beast spend 10 minutes focusing on your bond to do so, or if the figurine is broken. The beast can choose to break the bond even while inside of the figurine. If the bond is ended while the beast is inside of figurine, the beast immediately appears in the nearest unoccupied space to the figurine.",
+				"You can have a number of beast totems equal to your spellcasting ability modifier (minimum of 1). If you cast this spell on a beast while you have your maximum amount of bound figurines, you must choose to end one of the bonds or the spell fails."
+			],
+			"miscTags": [
+				"PRM"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Ranger",
+						"source": "PHB"
+					}
+				]
+			}
+		},
+		{
+			"name": "Zephyr Strike",
+			"source": "Ranger+",
+			"page": 10,
+			"level": 1,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true,
+				"m": "a weapon or piece of ammunition"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"A howling gale whips around your body, and you feel yourself become as light as wind. For the duration, your movement doesn't provoke opportunity attacks.",
+				"Additionally, you can choose to end this spell before you make an attack to grant that attack advantage. On a hit, this attack deals an additional {@damage 1d8} damage."
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Ranger",
+						"source": "PHB"
+					}
+				]
+			}
+		}
+	]
+}
