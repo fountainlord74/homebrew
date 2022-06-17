@@ -109,6 +109,69 @@
 					}
 				]
 			}
+		},
+        {
+			"name": "Keen Edge",
+			"source": "Starter Spells",
+			"page": 1,
+			"level": 3,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"One weapon you touch becomes magical until the spell ends if it is not already, and its critical threat range increases by 1. For normal weapons, their threat range becomes 19-20. This spell does not stack with any other feature, such as the Champion’s Improved Critical, that also increases a weapon’s threat range."
+			],
+            "entriesHigherLevel": [
+				{
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 6th-8th level, the weapon’s threat range becomes 18-20. With a spell slot of 9th level, the threat range becomes 17-20."
+					]
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Cleric",
+						"source": "PHB"
+					},
+                    {
+						"name": "Paladin",
+						"source": "PHB"
+					},
+                    {
+						"name": "Ranger",
+						"source": "PHB"
+					},
+                    {
+						"name": "Wizard",
+						"source": "PHB"
+					}
+				]
+			}
 		}
 	]
 }
